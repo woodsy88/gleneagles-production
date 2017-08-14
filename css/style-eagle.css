@@ -197,7 +197,7 @@ justify-content: center;
     font-size: 50px;
     text-transform: uppercase;
     font-weight:700;
-    color: #464646;
+    color: #fff;
     text-align: center;   
 }
 
@@ -207,12 +207,24 @@ justify-content: center;
     font-size: 50px;
     text-transform: uppercase;
     font-weight:700;
-    color: #fff;
+    color: #D3D3D3;
     text-align: center;
     margin-bottom: 40px;      
 }
 
 .sectionSubheader {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #D3D3D3;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 50px;
+    color: #D3D3D3
+}
+
+.page-header {
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     text-transform: uppercase;
@@ -445,6 +457,62 @@ justify-content: center;
   color: #fff;
     text-decoration: none;
 }
+
+
+/*==============****** RIGHT ROW START **** =================*/
+
+/*UNIVERSAL STYLES*/
+
+.topcontainerRightRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;   
+}
+
+.textItemRightRow {
+   text-align: left;   
+}
+
+.textContainerRightRow {
+   flex-basis: 35%;
+}
+
+.imageflexRightRow {
+   max-width: 100%;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1000px) {
+    .topcontainerRightRow {
+        flex-direction: column;
+    }
+    .textItemRightRow {
+       padding-top: 20px;   
+    }
+    .imageflexRightRow {
+    max-width: 100%;            
+  }
+    .imageContainterRightRow {
+        text-align: center;
+    }    
+}
+
+@media (max-width: 500px) {
+    .imageContainterRightRow {
+    flex-basis: 100%;
+    text-align: center;
+} 
+    .imageflexRightRow {
+    max-width: 100%;
+    }  
+    
+}
+
+/*==============****** RIGHT ROW END**** =================*/
+
+
 
 /*Media Queries=========================================*/
 
